@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav {
+    margin: 0 auto;
+    padding: 0.2rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+nav div {
+    width: 60%;
+    display: inline;
+    padding: 0.4rem;
+    margin: 0 auto 1rem 0.2rem;
+    text-align: left;
+    
+} 
+
+aside {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.2rem 0.4rem;
+    border: 1px solid black;
+}
+
+footer {
+    margin: auto 0.2rem;
+    padding: 0.2rem;
+    text-align: center;
+
+} 
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 0.5rem auto 0 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0 auto 2rem 0;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 0.4rem auto 0 0;
+    font-variant: small-caps;
+}
+h4 {
+    font-size: 1.8rem;
+    margin: 4rem auto 0.2rem 0;
+}
+h5 {
+    font-size: 1.6rem;
+    margin: 4rem auto 0.2rem 0;
+}
+
+h6 {
+    font-size: 1.4rem;
+    margin: 2rem auto 0.2rem 0;
+}
+
+aside p, main p, footer p, main ul, .content-list, .actual-content, .soap-sub-qs, .soap-sub2-qs, .list-content, .list-content li {
+    padding: 0.2rem;
+    line-height: 1.2;
+} 
+
+aside p {
+    margin: 0.4rem auto;
+    font-style: italic;
+}
+
+main p {
+    margin: 0.2rem 4rem auto;
+}
+
+footer p {
+    margin: 0.2rem auto;
+} 
+
+main ul {
+    margin: 0 auto;
+    list-style-position: inside;
+    border: 2px solid orange;
+}
+
+.content-list {
+    margin: 0.2rem auto 14rem 4rem;
+    border: none;
+}
+
+.actual-content, .list-content, .soap-sub-qs, .soap-sub2-qs {
+    border: none;
+    margin: 0.2rem auto;
+    width: 96%;
+}
+
+.soap-sub-qs {
+    margin: auto 6rem;
+}
+
+.soap-sub2-qs {
+    margin: auto 2rem;
+}
+

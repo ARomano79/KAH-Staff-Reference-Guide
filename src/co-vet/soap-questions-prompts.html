@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>KAH Staff Training/Reference Guide</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>⬅️<a href="../index.html">🏠</a>(this works)</div>
+        <div>menu icon (soon) ➡️</div>
+      </nav>
+      <h1>KAH Staff</h1>
+      <h2>Training/Reference Guide</h2>
+    </header>
+    <main>
+      <h4>Co-Vet AI</h4>
+      <h6>Prompts & SOAP Questions</h6>
+
+      <p>
+        Open this section during exams/recording in CoVet. AI is prompt
+        oriented, and these questions (or similar) can help us assess as many
+        details as possible about the Pt. This section will be updated as we
+        improve our prompts/questions and customize Co-Vet, so please check in
+        for updates.
+      </p>
+      <section>
+        <h6>Exam Intro/Prompt</h6>
+        <p>
+          Start each appointment by greeting the Client and patient, and verify
+          nature of visit. Explain to O that we are now integrating AI into our
+          workflow, and we are using an audio-based, scribe-type software to
+          assist creating our medical records, and verify consent. Once ok,
+          START RECORDING, and say... (example)...
+        </p>
+        <p>
+          "TODAY WE HAVE [patient name], HERE FOR [appointment type (recheck
+          ears, annual, etc)]. [patient name] IS A [age], [f/m, s/n], [species],
+          and CURRENT WEIGHT TODAY IS ___."
+        </p>
+        <p>
+          Start SOAP questions from here, making sure to specifically state "NO
+          VOMITING, NO DIARRHEA, etc (keywords/prompts matter!)"...
+        </p>
+      </section>
+
+      <h6>SOAP LIST</h6>
+      <ul>
+        <!-- USE FOR PAGE LIST/NAV/LINKING -->
+        <li>
+          General/Standard
+          <ul>
+            <li><a href="#soap-qs-medical">Medical</a></li>
+            <li><a href="#soap-qs-med-prog">Med Progress</a></li>
+            <li><a href="#soap-qs-tech">Tech</a></li>
+            <li><a href="#soap-qs-obj">Objective Prompts</a> (for Drs)</li>
+          </ul>
+        </li>
+        <li>
+          Annual Wellness
+          <ul>
+            <li><a href="#soap-qs-awk9">Junior K9</a></li>
+            <li><a href="#soap-qs-awfel">Junior Feline</a></li>
+            <li><a href="#soap-qs-awsk9">Senior K9</a></li>
+            <li><a href="#soap-qs-awsfel">Senior Feline</a></li>
+          </ul>
+        </li>
+        <li>
+          Establish Care
+          <ul>
+            <li><a href="#soap-qs-est-care-ak9">Adult K9</a></li>
+            <li><a href="#soap-qs-est-care-puppy">Puppy  (new Client/new Pt)</a></li>
+            <li><a href="#soap-qs-est-care-afel">Adult Feline</a></li>
+            <li><a href="#soap-qs-est-care-kitten">Kitten (new Client/new Pt)</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#soap-qs-life-stages">Life Stages</a>
+          <ul>
+            <li>Puppy</li>
+            <li>Kitten</li>
+            <li>PAP - Spay</li>
+            <li>PAP - neuter</li>
+            <li>PAP - dental</li>
+            <li>PAP - mass removal</li>
+            <li>QOL</li>
+          </ul>
+        </li>
+        <li>
+          Specific Conditions
+          <ul>
+            <li><a href="#soap-qs-eyes">Eyes</a></li>
+            <li><a href="#soap-qs-ears">Ears</a></li>
+            <li><a href="#soap-qs-derm">Derm/Skin</a> (Itching)</li>
+            <li>Vomiting</li>
+            <li>Diarrhea</li>
+            <li>Vomiting AND Diarrhea</li>
+            <li>Urinary</li>
+            <li>Coughing</li>
+            <li>Limping</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h5>General</h5>
+      <section>
+        <a id="soap-qs-medical"><h6>CHIEF CONCERN: MEDICAL</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+        <p>-CONDITION/CASE SPECIFIC QUESTIONS HERE! (see other SOAPs)-</p>
+        <p>Does the Pet go outside? (Feline):</p>
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-med-prog"><h6>CHIEF CONCERN: MEDICAL PROGRESS</h6></a>
+        <p>Last Appointment:</p>
+        <ul class="soap-sub-qs">
+          <li>Progression:</li>
+          <li>Any additional concerns?</li>
+        </ul>
+
+        <p>UTD on wellness?</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-tech"><h6>CHIEF CONCERN: TECH</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-obj"><h6>Objective Prompts (for Drs)</h6>
+          <p>In development</p>
+      </section>
+      <hr />
+
+
+      <h5>Annual Wellness</h5>
+      <section>
+        <a id="soap-qs-awk9"><h6>CHIEF CONCERN: ANNUAL WELLNESS - Jr K9 (1-7yrs)</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>Home dental care?</p>
+
+        <p>Performing bloodwork today? (Junior K9 Panel - CHEM/CBC/4DX/UA/FECAL):</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-awfel"><h6>CHIEF CONCERN: ANNUAL WELLNESS - Junior Fel (1-7yrs)</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>Home dental care?</p>
+
+        <p>Performing bloodwork today? (Junior Feline Panel - CHEM/CBC/UA/FECAL):</p>
+
+        <p>Does the Pet go outside?</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-awsk9"><h6>CHIEF CONCERN: ANNUAL WELLNESS - Sr K9 (7+yrs)</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>Home dental care?</p>
+
+        <p>Performing bloodwork today? (Senior K9 Panel - CHEM/CBC/T4/4DX/UA/FECAL):</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-awsfel"><h6>CHIEF CONCERN: ANNUAL WELLNESS - Sr Fel (7+yrs)</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>Home dental care?</p>
+
+        <p>Performing bloodwork today? (Senior Feline Panel - CHEM/CBC/T4/Cardio ProBNP/UA/FECAL):</p>
+
+        <p>Does the Pet go outside?</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <h5>Establish Care</h5>
+      <section>
+        <a id="soap-qs-est-care-ak9"><h6>CHIEF CONCERN: ESTABLISH CARE - Adult (K9)</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>How long have you had your Pet? </p>
+
+        <p>Where did you get them from?</p>
+
+        <p>Any other pets in home?</p>
+
+        <p>Home dental care?</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-est-care-puppy"><h6>CHIEF CONCERN: ESTABLISH CARE - Puppy (new Client/new Pt)</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>How long have you had your Pet? </p>
+
+        <p>Where did you get them from?</p>
+
+        <p>Any other pets in home?</p>
+
+        <p>Socialization?</p>
+
+        <p>Chewing/biting?</p>
+
+        <p>Crate training?</p>
+
+        <p>House training?</p>
+
+        <p>Puppy classes?</p>
+
+        <p>Grooming & NTs?</p>
+
+        <p>Home dental care?</p>
+
+        <p>Planning to spay/neuter?</p> 
+
+        <p>Microchip?</p>  
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-est-care-afel"><h6>CHIEF CONCERN: ESTABLISH CARE - Adult (Fel)</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>How long have you had your Pet? </p>
+
+        <p>Where did you get them from?</p>
+
+        <p>Any other pets in home?</p>
+
+        <p>Does your Pet go outside?</p>
+
+        <p>Home dental care?</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-est-care-kitten"><h6>CHIEF CONCERN: ESTABLISH CARE - Kitten (new Client/new Pt)</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>How long have you had your Pet? </p>
+
+        <p>Where did you get them from?</p>
+
+        <p>Any other pets in home?</p>
+
+        <p>Socialization?</p>
+
+        <p>Indoor/Outdoor (or planning to let out?)?</p>
+
+        <p>Chewing/biting/scratching?</p>
+
+        <p>Litterbox training?</p>
+
+        <p>Grooming & NTs?</p>
+
+        <p>Home dental care?</p>
+
+        <p>Planning to spay/neuter?</p> 
+
+        <p>Microchip?</p>  
+
+        <p>Bloodwork due today? (Has a 3x Snap been done?)</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <a id="soap-qs-life-stages"><h5>Life Stages</h5></a>
+
+      <!-- 
+      <section>
+        <p>see SOAP base above (for now), and specific questions below:</p>
+        <h6>Puppy</h6>
+        <p>
+          CHIEF CONCERN: PUPPY VISIT (Est. Client/New Pt.) IF NEW PT: DURATION
+          OF OWNERSHIP?: ORIGINS? HOW IS THE PET DOING? (ANY CONCERNS?): OTHER
+          PETS IN HOME? CRATE TRAINING: PUPPY CLASSES: HOUSE TRAINING:
+          SOCIALIZATION: CHEWING/BITING: GROOMING / NAIL TRIMS: HOME DENTAL
+          CARE: PLANNING TO SPAY/NEUTER?: MICROCHIP? (SCAN FOR CURRENT OR FUTURE
+          PLAN?):
+        </p>
+        <h6>Kitten</h6>
+        <p>
+          CHIEF CONCERN: KITTEN VISIT (Est. Client/New Pt.) IF NEW PT: DURATION
+          OF OWNERSHIP?: ORIGINS? DURATION OF OWNERSHIP?: ORIGINS? HOW IS THE
+          PET DOING? (ANY CONCERNS?): OTHER PETS IN HOME?: INDOOR/OUTDOOR (OR
+          PLANNING TO LET OUT/LEASH TRAIN)?: LITTERBOX TRAINING: SOCIALIZATION:
+          CHEWING/BITING: GROOMING / NAIL TRIMS: HOME DENTAL CARE: PLANNING TO
+          SPAY/NEUTER?: MICROCHIP? (SCAN FOR CURRENT OR FUTURE PLAN?): BLOODWORK
+          DUE TODAY? (TRIPLE SNAP):
+        </p>  -->
+
+        <!-- 
+
+        <h6>PAP - spay</h6>
+        <p>
+          CHIEF CONCERN: PAP – Spay (*don’t forget to add “mature spay” to tx
+          plan if OVER 12 months old!) ANY CONCERNS WITH PET? SIGNS OF HEAT?
+          BLOODWORK DUE:
+        </p>
+        <h6>PAP - neuter</h6>
+        <p>CHIEF CONCERN: PAP – Neuter ANY CONCERNS WITH PET? BLOODWORK DUE:</p>
+        <h6>PAP - dental</h6>
+        <p>
+          CHIEF CONCERN: PAP – Dental ANY CONCERNS WITH PET? ARE YOU CURRENTLY
+          DOING ANY HOME DENTAL CARE?: ARE THERE ANY LUMPS/BUMPS YOU WOULD LIKE
+          REMOVED DURING DENTAL?: BLOODWORK DUE:
+        </p>
+        <h6>PAP - mass removal</h6>
+        <p>
+          CHIEF CONCERN: PAP - Mass Removal ANY CONCERNS WITH PET? WHERE ARE THE
+          MASS(ES) LOCATED THAT YOU WANT REMOVED?: WHEN DID YOU FIRST NOTICE
+          THEM? HAVE THEY CHANGED COLOR/SIZE SINCE FIRST NOTICING THEM? DO THEY
+          BOTHER YOUR PET? DO YOU WANT YOUR PET TO HAVE A DENTAL PROCEDURE DONE
+          WHILE YOUR PET IS HAVING THEIR MASSES REMOVED?: BLOODWORK DUE:
+        </p>
+        <h6>QOL</h6>
+        <p>
+          CHIEF CONCERN: QOL HOW LONG HAS PET BEEN UNWELL? or PROGRESSION
+          (ONGOING CASES): DOES THE OWNER WISH TO BE PRESENT?: WHAT ARE THEIR
+          WISHES WITH REMAINS?:
+        </p>
+      </section>
+
+    --> 
+
+<h5>Specific Conditions</h5>
+      <section>
+        <a id="soap-qs-eyes"><h6>CHIEF CONCERN: EYES</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>Which eye(s) seem to be bothering the Pet?</p>
+
+        <p>When did the problem start?</p>
+
+        <p>Any ocular discharge? (describe):</p>
+
+        <p>Any redness/swelling?</p>
+
+        <p>Presence of pain? (blinking, holding eye shut, face rubbing/pawing, sensitivity to light): </p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-ears"><h6>CHIEF CONCERN: EARS</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>Which ear(s) are bothering pet?</p>
+
+        <p>When did you first notice the problem?</p>
+
+        <p>Are the ears better or worse since first noticing?</p>
+
+        <p>Has Pet has ear problems before?</p>
+        <ul class="soap-sub-qs">
+          <li>
+          If so, when?
+        </li>
+        <li>Treatment done?</li>
+        </ul>
+
+        <p>Is Pet shaking head, rubbing, or scratching?</p>
+
+        <p>Any redness/swelling/discharge?</p>
+
+        <p>Are the ears painful?</p>
+
+        <p>Any balance issues or head tilt?</p>
+
+        <p>Itching/Scratching anywhere else?  Visit the <a href="#soap-qs-derm">Derm/Skin/Itching</a> SOAP if needed.</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-derm"><h6>CHIEF CONCERN: DERM/SKIN/ITCHING</h6></a>
+
+        <p>How is the Pet doing? (Any specific concerns?)</p>
+
+        <p>How long has Pet been itching? (when was problem first noticed?)</p>
+
+        <p>Where is Pet itching?</p>
+
+        <p>Has Pet been treated for itching before?</p>
+        <ul class="soap-sub-qs">
+          <li>If so, did treatment help?</li>
+        </ul>
+
+        <p>Evidence of Pruritus?  (scratching, biting, licking):</p>
+        <ul class="soap-sub-qs">
+          <li>If so, how severe? (scale of 1 to 10):</li>
+        </ul>
+
+        <p>Any hair loss? (shedding or patchy):</p>
+
+        <p>Any odor noticed on skin? (describe):</p>
+
+        <p>Any pigment changes of the skin? (describe):</p>
+
+        <p>Any presence of dandruff?</p>
+
+        <p>Does Pet have access to other foods; or any new/sudden diet changes?</p>
+
+        <p>Any changes in envrironment? (bedding, carpet, cleaners, shampoos):</p>
+
+        <p>How often is the Pet groomed (or bathed at home)? </p>
+        <ul class="soap-sub-qs">
+          <li>What kind of shampoos/products used?</li>
+        </ul>
+
+        <p>Any other pets in home?</p>
+
+      <ul class="soap-sub-qs">
+        <li>
+          Are they affected?
+        </li>
+      </ul>
+
+        <p>
+          Any issues with <a href="#soap-qs-eyes">Eyes</a> or <a href="#soap-qs-ears">Ears</a>?      
+        </p>
+
+        
+
+        <p>Are the ears better or worse since first noticing?</p>
+
+        <p>Has Pet has ear problems before?</p>
+        <ul class="soap-sub-qs">
+          <li>
+          If so, when?
+        </li>
+        <li>Treatment done?</li>
+        </ul>
+
+        <p>Is Pet shaking head, rubbing, or scratching?</p>
+
+        <p>Any redness/swelling/discharge?</p>
+
+        <p>Are the ears painful?</p>
+
+        <p>Any balance issues or head tilt?</p>
+
+        <p>Itching/Scratching anywhere else?  Visit the <a href="soap-qs-derm">Derm/Skin/Itching</a> SOAP if needed.</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <!-- 
+
+      <section>
+        <a id="soap-qs-conditions"><h5>Specific Conditions</h5></a>
+        <p>see SOAP base above (for now), and specific questions below:</p>
+       
+        <h6>Derm/Skin (Itching)</h6>
+        
+        <h6>Vomiting</h6>
+        <p>
+          CHIEF CONCERN: VOMITING WHEN DID THE VOMITING BEGIN? HOW MANY TIMES
+          HAS PET VOMITED? DESCRIBE VOMITING (COLOR/CONSISTENCY/FOREIGN
+          MATERIAL/FOOD)?: IS ACTIVITY LEVEL / ATTITUDE NORMAL? DOES PET HAVE
+          ACCESS TO OTHER FOODS / ANY NEW/SUDDEN DIET CHANGES? DOES PET GO
+          OUTSIDE UNSUPERVISED? IS THERE ANYTHING THEY COULD HAVE GOTTEN INTO
+          THAT THEY SHOULDN’T HAVE?: ANY OTHER PETS HAVING SAME ISSUE?
+        </p>
+        <h6>Diarrhea</h6>
+        <p>
+          CHIEF CONCERN: DIARRHEA HOW LONG HAS PET HAD DIARRHEA?: HOW MANY TIMES
+          PER DAY IS PET GOING?: IS DIARRHEA GETTING WORSE / BETTER / SAME?
+          ANYTHING DONE AT HOME TO TRY AND RESOLVE ISSUE PRIOR TO VISIT?
+          ACCIDENTS IN HOUSE? DESCRIBE STOOL (COLOR/CONSISTENCY): IS THERE
+          BLOOD? / WORMS? STRAINING WHEN DEFECATING? IS ACTIVITY LEVEL /
+          ATTITUDE NORMAL? DOES PET HAVE ACCESS TO OTHER FOODS / ANY NEW/SUDDEN
+          DIET CHANGES? DOES PET GO OUTSIDE UNSUPERVISED? IS THERE ANYTHING THEY
+          COULD HAVE GOTTEN INTO THAT THEY SHOULDN’T HAVE?: ANY OTHER PETS
+          HAVING SAME ISSUE?
+        </p>
+        <h6>Vomiting AND Diarrhea</h6>
+        <p>
+          CHIEF CONCERN: DIARRHEA AND VOMITING HOW LONG HAS PET HAD DIARRHEA?:
+          HOW MANY TIMES PER DAY IS PET GOING?: IS DIARRHEA GETTING WORSE /
+          BETTER / SAME? ANYTHING DONE AT HOME TO TRY AND RESOLVE ISSUE PRIOR TO
+          VISIT? ACCIDENTS IN HOUSE? DESCRIBE STOOL (COLOR/CONSISTENCY): IS
+          THERE BLOOD? / WORMS? STRAINING WHEN DEFECATING? WHEN DID THE VOMITING
+          BEGIN? HOW MANY TIMES HAS PET VOMITED? DESCRIBE VOMITING
+          (COLOR/CONSISTENCY/FOREIGN MATERIAL/FOOD)?: IS ACTIVITY LEVEL /
+          ATTITUDE NORMAL? DOES PET HAVE ACCESS TO OTHER FOODS / ANY NEW/SUDDEN
+          DIET CHANGES? DOES PET GO OUTSIDE UNSUPERVISED? IS THERE ANYTHING THEY
+          COULD HAVE GOTTEN INTO THAT THEY SHOULDN’T HAVE?: ANY OTHER PETS
+          HAVING SAME ISSUE?
+        </p>
+        <h6>Urinary</h6>
+        <p>
+          CHIEF CONCERN: URINARY WHEN DID THE PROBLEM START? BETTER/WORSE SINCE
+          FIRST STARTED? IS THE PET HAVING ACCIDENTS? IS THERE BLOOD IN THE
+          URINE? ANY CHANGES IN WATER CONSUMPTION? QUANTITY / FREQUENCY OF
+          URINATION? STRAINING / DRIBBLING WHEN PRODUCING URINE? LICKING? ANY
+          OTHER CHANGES?
+        </p>
+        <h6>Coughing</h6>
+        <p>
+          CHIEF CONCERN: COUGHING WHEN DID YOUR PET START COUGHING? IS COUGH
+          BETTER OR WORSE SINCE IT STARTED?: DESCRIBE COUGH: ANY PRODUCTION WITH
+          COUGH? (DESCRIBE): ANY DISCHARGE FROM EYES/NOSE?: IF SO, DESCRIBE:
+          DOES YOUR PET GO TO DOGGY DAYCARE/BOARDING, GROOMING, DOG PARK?: IF
+          SO, WHERE/HOW OFTEN?
+        </p>
+        <h6>Limping</h6>
+        <p>
+          CHIEF CONCERN: LIMPING WHICH LEG(S)? CONSISTENTLY SAME LEG(S) OR
+          SHIFTING LEGS?: WHEN DID LAMENESS BEGIN?: HAS IT GOTTEN BETTER OR
+          WORSE?: WEIGHT BEARING?: ANY OTHER ABNORMAL BEHAVIORS / LETHARGY?:
+          LAST BLOODWORK PANEL (For Chronic mobility/NSAID Pts):
+        </p>
+      </section>
+
+      -->
+                                                                   
+
+      <hr />
+      <p>
+        Page/Site Issues/Questions? Make a pull request on our
+        <a
+          href="https://github.com/ARomano79/KAH-Staff-Reference-Guide"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub Repo</a
+        >
+        or <a href="mailto:amie.romano79@gmail.com">email me</a>😉
+      </p>
+    </main>
+    <footer>
+      <p>&#169; 2024 KAH Staff Training/Reference Guide</p>
+    </footer>
+  </body>
+</html>
