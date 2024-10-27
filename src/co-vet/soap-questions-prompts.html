@@ -47,11 +47,11 @@
       </section>
 
       <h6>SOAP LIST</h6>
-      <ul>
+      <ul class="soap-list">
         <!-- USE FOR PAGE LIST/NAV/LINKING -->
         <li>
           General/Standard
-          <ul>
+          <ul class="soap-sub-list">
             <li><a href="#soap-qs-medical">Medical</a></li>
             <li><a href="#soap-qs-med-prog">Med Progress</a></li>
             <li><a href="#soap-qs-tech">Tech</a></li>
@@ -60,7 +60,7 @@
         </li>
         <li>
           Annual Wellness
-          <ul>
+          <ul class="soap-sub-list">
             <li><a href="#soap-qs-awk9">Junior K9</a></li>
             <li><a href="#soap-qs-awfel">Junior Feline</a></li>
             <li><a href="#soap-qs-awsk9">Senior K9</a></li>
@@ -69,7 +69,7 @@
         </li>
         <li>
           Establish Care
-          <ul>
+          <ul class="soap-sub-list">
             <li><a href="#soap-qs-est-care-ak9">Adult K9</a></li>
             <li><a href="#soap-qs-est-care-puppy">Puppy</a> (new Client/new Pt)</li>
             <li><a href="#soap-qs-est-care-afel">Adult Feline</a></li>
@@ -78,7 +78,7 @@
         </li>
         <li>
           Life Stages
-          <ul>
+          <ul class="soap-sub-list">
             <li><a href="#soap-qs-puppy">Puppy</a></li>
             <li><a href="#soap-qs-kitten">Kitten</a></li>
             <li><a href="#soap-qs-paps">PAP - spay</a></li>
@@ -90,15 +90,15 @@
         </li>
         <li>
           Specific Conditions
-          <ul>
+          <ul class="soap-sub-list">
             <li><a href="#soap-qs-eyes">Eyes</a></li>
             <li><a href="#soap-qs-ears">Ears</a></li>
             <li><a href="#soap-qs-derm">Derm/Skin</a> (Itching)</li>
-            <li><a href="#soap-qs-vomit">Vomiting</a></li>
+            <li><a href="#soap-qs-vomiting">Vomiting</a></li>
             <li><a href="#soap-qs-diarrhea">Diarrhea</a></li>
             <li><a href="#soap-qs-urinary">Urinary</a></li>
-            <li><a href="#soap-qs-cough">Coughing</a></li>
-            <li><a href="#soap-qs-limp">Limping</a></li>
+            <li><a href="#soap-qs-coughing">Coughing</a></li>
+            <li><a href="#soap-qs-limping">Limping</a></li>
           </ul>
         </li>
       </ul>
@@ -1113,7 +1113,7 @@
       <hr />
 
       <section>
-        <a id="soap-qs-vomiting"><h6>CHIEF CONCERN: DIARRHEA</h6></a>
+        <a id="soap-qs-diarrhea"><h6>CHIEF CONCERN: DIARRHEA</h6></a>
 
         <p>How is the Pet doing? (Any specific concerns?)</p>
 
@@ -1181,40 +1181,161 @@
       </section>
       <hr />
 
-      
-      <!-- 
+      <section>
+        <a id="soap-qs-urinary"><h6>CHIEF CONCERN: URINARY</h6></a>
+
+        <p>How is the Pet doing?</p>
+
+        <p>When did the problem start?</p>
+        <ul class="soap-sub-qs">
+          <li>Better or worse since first started?</li>
+        </ul>
+
+        <p>Is the Pet having accidents?</p>
+
+        <p>Is there any blood in the urine?</p>
+
+        <p>Any changes in water consumption?</p>
+
+        <p>Changes in quantity/frequency of urination?</p>
+
+        <p>Any straining or dribbling while urinating?</p>
+        <ul class="soap-sub-qs">
+          <li>Licking?</li>
+        </ul>
+
+        <p>Any other changes?</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>BM:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
 
       <section>
-        <a id="soap-qs-conditions"><h5>Specific Conditions</h5></a>
-        <p>see SOAP base above (for now), and specific questions below:</p>
-        
-        <h6>Urinary</h6>
-        <p>
-          CHIEF CONCERN: URINARY WHEN DID THE PROBLEM START? BETTER/WORSE SINCE
-          FIRST STARTED? IS THE PET HAVING ACCIDENTS? IS THERE BLOOD IN THE
-          URINE? ANY CHANGES IN WATER CONSUMPTION? QUANTITY / FREQUENCY OF
-          URINATION? STRAINING / DRIBBLING WHEN PRODUCING URINE? LICKING? ANY
-          OTHER CHANGES?
-        </p>
-        <h6>Coughing</h6>
-        <p>
-          CHIEF CONCERN: COUGHING WHEN DID YOUR PET START COUGHING? IS COUGH
-          BETTER OR WORSE SINCE IT STARTED?: DESCRIBE COUGH: ANY PRODUCTION WITH
-          COUGH? (DESCRIBE): ANY DISCHARGE FROM EYES/NOSE?: IF SO, DESCRIBE:
-          DOES YOUR PET GO TO DOGGY DAYCARE/BOARDING, GROOMING, DOG PARK?: IF
-          SO, WHERE/HOW OFTEN?
-        </p>
-        <h6>Limping</h6>
-        <p>
-          CHIEF CONCERN: LIMPING WHICH LEG(S)? CONSISTENTLY SAME LEG(S) OR
-          SHIFTING LEGS?: WHEN DID LAMENESS BEGIN?: HAS IT GOTTEN BETTER OR
-          WORSE?: WEIGHT BEARING?: ANY OTHER ABNORMAL BEHAVIORS / LETHARGY?:
-          LAST BLOODWORK PANEL (For Chronic mobility/NSAID Pts):
-        </p>
-      </section>
+        <a id="soap-qs-coughing"><h6>CHIEF CONCERN: COUGHING</h6></a>
 
-      -->
-                                                                   
+        <p>How is the Pet doing?</p>
+
+        <p>When did your Pet start coughing?</p>
+          <ul class="soap-sub-qs">
+            <li>Is it better or worse since it started?</li>
+          </ul>
+
+          <p>Describe cough:</p>
+          <ul class="soap-sub-qs">
+            <li>Any production with cough?  (describe)</li>
+          </ul>
+
+          <p>Any discharge from eyes/nose?  (describe)</p>
+
+          <p>Does your Pet go to doggy daycare/grooming/boarding/dog park?</p>
+          <ul class="soap-sub-qs">
+            <li>If so, Where?  How often?</li>
+          </ul>
+
+        <p>Any other changes?</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section>
+        <a id="soap-qs-limping"><h6>CHIEF CONCERN: LIMPING</h6></a>
+
+        <p>How is the Pet doing?</p>
+
+        <p>When did lameness begin?</p>
+          <ul class="soap-sub-qs">
+            <li>Has it gotten better or worse?</li>
+          </ul>
+
+        <p>Is it consistently the same leg(s), or shifting legs?</p>
+
+        <p>Weight bearing?</p>
+
+        <p>Any other changes?</p>
+
+        <p>Last bloodwork panel (for chronic mobility/NSAID Pts):</p>
+
+        <p>System:</p>
+        <ul class="soap-sub-qs">
+          <li>Appetite:</li>
+          <li>Vomiting:</li>
+          <li>Urine/Water Intake:</li>
+          <li>Coughing:</li>
+          <li>Sneezing:</li>
+        </ul>
+        <p>Present Diet/Treats:</p>
+        <p>Daily Medications/Vitamins/Supplements (name, dose, frequency):</p>
+        <p>Preventatives:</p>
+        <ul class="soap-sub-qs">
+          <li>
+            Heartworm (monthly):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+          <li>
+            Flea/Tick (monthly, quarterly, topical):
+            <ul class="soap-sub2-qs">
+              <li>Purchased/# of doses:</li>
+              <li>Last given:</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr />
 
       <hr />
       <p>

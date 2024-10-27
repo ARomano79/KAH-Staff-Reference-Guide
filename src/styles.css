@@ -74,7 +74,7 @@ h6 {
     margin: 2rem auto 0.2rem 0;
 }
 
-aside p, main p, footer p, main ul, .content-list, .actual-content, .soap-sub-qs, .soap-sub2-qs, .list-content, .list-content li {
+aside p, main p, footer p, main ul, .content-list, .actual-content, .soap-sub-qs, .soap-sub2-qs, .soap-list, .soap-sub-list, .list-content, .list-content li {
     padding: 0.2rem;
     line-height: 1.2;
 } 
@@ -103,9 +103,8 @@ main ul {
     border: none;
 }
 
-.actual-content, .list-content, .soap-sub-qs, .soap-sub2-qs {
+.actual-content, .list-content, .soap-sub-qs, .soap-sub2-qs, .soap-sub-list, .soap-list {
     border: none;
-    margin: 0.2rem auto;
     width: 96%;
 }
 
@@ -117,3 +116,28 @@ main ul {
     margin: auto 2rem;
 }
 
+.soap-list {
+    border: none;
+}
+
+.soap-list li {
+    border: none;
+    margin: 0 auto;
+    padding: 0.1rem 0.2rem;
+    list-style-type: none;
+    font-size: 1.1rem; 
+   
+}
+
+.soap-sub-list {
+    border: none;
+    margin-bottom: 1.6rem;
+}
+
+.soap-sub-list li {
+    border: none;
+    list-style-type: circle;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0.1rem;
+}
