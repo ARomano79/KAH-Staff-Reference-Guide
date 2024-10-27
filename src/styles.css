@@ -2,7 +2,33 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-size: 18px;
+    font-family: "Noto Serif", serif;
 }
+
+
+
+/*
+.noto-serif {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+ /*
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    border: 2px solid red; 
+}
+
+
+ /*
 
 html, body {
     margin: 0;
@@ -23,8 +49,12 @@ nav div {
     padding: 0.4rem;
     margin: 0 auto 1rem 0.2rem;
     text-align: left;
-    
 } 
+
+section {
+    margin: 0 auto;
+    border: 2px solid green;
+}
 
 aside {
     width: 90%;
@@ -116,17 +146,12 @@ main ul {
     margin: auto 2rem;
 }
 
-.soap-list {
-    border: none;
-}
-
 .soap-list li {
     border: none;
     margin: 0 auto;
     padding: 0.1rem 0.2rem;
     list-style-type: none;
     font-size: 1.1rem; 
-   
 }
 
 .soap-sub-list {
@@ -137,7 +162,10 @@ main ul {
 .soap-sub-list li {
     border: none;
     list-style-type: circle;
-    text-decoration: none;
     margin: 0 auto;
     padding: 0.1rem;
 }
+
+
+/*
+
