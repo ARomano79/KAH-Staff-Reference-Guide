@@ -79,9 +79,9 @@ nav div {
         background-color: var(--KAH-med-blue);
         color: var(--KAH-lighter-blue);
         margin: 0.2rem auto;
-        padding: 0.3rem 0.4rem 0.5rem;
+        padding: 0.2rem 0.3rem 0.4rem;
         font-size: 2.3rem;
-        font-weight: 900;
+        font-weight: 800;
         text-align: center;
         line-height: 1.8rem;
         border: 0.01rem solid var(--KAH-light-blue);
