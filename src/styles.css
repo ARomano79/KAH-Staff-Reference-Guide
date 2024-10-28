@@ -89,6 +89,13 @@ nav div {
         border-radius: 0.4rem; 
         box-shadow: 0.04rem 0.04rem 0.06rem var(--dark-shadow);
         cursor: pointer;
+        overflow: hidden;
+      }
+
+      @media only screen and (max-width: 400px) {
+        .dropbtn {
+         padding: 0;
+        }
       }
     
     
