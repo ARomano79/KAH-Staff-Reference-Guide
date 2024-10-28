@@ -5,9 +5,22 @@
     font-family: "Noto Serif", serif;
 }
 
+:root {
+    --KAH-dark-blue: #253979;
+    --KAH-gold: #fcb040;
+    --KAH-med-blue: #1286b5;
+    --KAH-lighter-med-blue: #70b6d2;
+    --KAH-light-blue: #86d3e3;
+    --KAH-lighter-blue: #ceedf3;
+    --KAH-white: #FFF;
+    --KAH-black: #000;
+    --box-shadow: rgba(0,0,0,0.3);
+    --light-shadow: rgba(134,211,227,0.4);
+    --dark-shadow: rgba(37,57,121,0.4);
+    
+}
 
-
-/*
+/*  google font info
 .noto-serif {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
@@ -17,31 +30,265 @@
       "wdth" 100;
   }
 
- /*
+  */ 
 
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-
-    border: 2px solid red; 
+    text-align: center;
 }
 
-
- /*
-
-html, body {
-    margin: 0;
+header, nav, main, footer {
+    margin: 0 auto;
     padding: 0;
-    width: 100%;
+    width: 100%; 
+}
+
+header {
+    border: none;
 }
 
 nav {
-    margin: 0 auto;
-    padding: 0.2rem;
-    text-align: center;
     border-bottom: 1px solid black;
+    filter: drop-shadow(1px 1px 0.3px rgba(0,0,0,0.2));
+    background-color: var(--KAH-dark-blue);
+    height: 3.6rem;
 }
+
+nav div {
+    display: inline;
+
+}
+
+#home-button {
+    margin: 0.4rem 1rem auto;
+    padding: 0.2rem;
+    height: 2.8rem;
+    width: auto;
+    filter: drop-shadow(1px 1px 0.3px rgba(255,255,255,0.2));
+    border: 1px solid var(--KAH-lighter-blue);
+    float: left; 
+    background-color: var(--KAH-med-blue);
+    opacity: 90%;
+    border-radius: 0.4rem;
+}
+
+     /* Dropdown Button */
+     .dropbtn {
+        background-color: var(--KAH-med-blue);
+        color: var(--KAH-lighter-blue);
+        margin: 0.2rem auto;
+        padding: 0.2rem;
+        font-size: 2.4rem;
+        font-weight: 900;
+        text-align: center;
+        line-height: 1.8rem;
+        border: 0.01rem solid var(--KAH-light-blue);
+        border-radius: 0.4rem; 
+        box-shadow: 0.04rem 0.04rem 0.06rem var(--dark-shadow);
+        cursor: pointer;
+      }
+    
+      @media only screen and (min-width: 400px) {
+        .dropbtn {
+          font-size: 2rem;
+          padding: 0.4rem 0.6rem;
+        }
+      }
+    
+      
+      /* Dropdown button on hover & focus */
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: var(--KAH-light-blue);
+        color: var(--KAH-dark-blue);
+      }
+      
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: block;
+        margin: 0 1rem 0 auto;
+        padding: 0.2rem;
+        float: right;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: transparent;
+        min-width: 18rem;
+        z-index: 1;
+        margin: 0.16rem -14rem;
+      }
+    
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: var(--KAH-dark-blue);
+        background-color: var(--KAH-lighter-blue);
+        padding: 1rem;
+        text-decoration: none;
+        display: block;
+        margin: 0.02rem auto;
+        text-align: right;
+        border: 0.04rem solid var(--KAH-med-blue);
+        border-radius: 0.4rem; 
+        box-shadow: 0.04rem 0.04rem 0.06rem var(--dark-shadow);
+        font-weight: 600;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: var(--KAH-lighter-med-blue);
+        font-size: 1.1rem;
+      }
+      
+      /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+      .show {display:block;} 
+
+
+      /* HERO SECTION & HEADERS (ALL) */
+
+      h1 {
+        font-size: 1.6rem;
+        margin: 0.5rem auto 0 0;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        margin: 0 auto 2rem 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        padding: 0;
+    }
+
+    section {
+        margin: 0 auto;
+        border: none;
+    }
+    
+    aside {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.2rem 0.4rem;
+        border: 1px solid black;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+        margin: 0.4rem auto 0 0;
+        font-variant: small-caps;
+    }
+    h4 {
+        font-size: 1.8rem;
+        margin: 4rem auto 0.2rem 0;
+    }
+    h5 {
+        font-size: 1.6rem;
+        margin: 4rem auto 0.2rem 0;
+    }
+    
+    h6 {
+        font-size: 1.4rem;
+        margin: 2rem auto 0.2rem 0;
+    }
+    
+/* OTHER TEXT FORMATTING */
+
+    aside p, main p, footer p, main ul, .actual-content, .soap-sub-qs, .soap-sub2-qs, .soap-list, .soap-sub-list, .list-content, .list-content {
+        padding: 0.2rem;
+        line-height: 1.2;
+    } 
+    
+    aside p {
+        margin: 0.4rem auto;
+        font-style: italic;
+    }
+
+    .content-list {
+        margin: 0.2rem 4rem;
+        padding: 0.2rem;
+        border: none;
+    }
+
+    .content-list li, .actual-content li, .list-content li {
+        line-height: 1.4;
+        margin: 0.6rem auto;
+        list-style-type: none;
+    }
+
+
+    
+    .actual-content, .list-content, .soap-sub-qs, .soap-sub2-qs, .soap-sub-list, .soap-list {
+        border: none;
+        width: 96%;
+    }
+    
+    .soap-sub-qs {
+        margin: auto 6rem;
+    }
+    
+    .soap-sub2-qs {
+        margin: auto 2rem;
+    }
+    
+    .soap-list li {
+        border: none;
+        margin: 0 auto;
+        padding: 0.1rem 0.2rem;
+        list-style-type: none;
+        font-size: 1.1rem; 
+    }
+    
+    .soap-sub-list {
+        border: none;
+        margin-bottom: 1.6rem;
+    }
+    
+    .soap-sub-list li {
+        border: none;
+        list-style-type: circle;
+        margin: 0 auto;
+        padding: 0.1rem;
+    }
+
+
+
+main {
+    border: none;
+}
+
+footer {
+    border: none;
+}
+
+footer section p, footer p {
+    padding: 0.2rem;
+}
+
+footer p {
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 0.8rem;
+    border-top: 1px solid black;
+}
+
+footer section p {
+    margin: 2rem auto;
+    font-size: 1rem;
+    width: 96%;
+    border: none;
+}
+
+footer section p span {
+    font-style: normal;
+}
+
+ /*
+
 
 nav div {
     width: 60%;
@@ -51,76 +298,11 @@ nav div {
     text-align: left;
 } 
 
-section {
-    margin: 0 auto;
-    border: 2px solid green;
-}
 
-aside {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0.2rem 0.4rem;
-    border: 1px solid black;
-}
-
-footer {
-    margin: auto 0.2rem;
-    padding: 0.2rem;
-    text-align: center;
-
-} 
-
-h1, h2, h3, h4, h5, h6 {
-    padding: 0;
-    text-align: center;
-}
-
-h1 {
-    font-size: 1.8rem;
-    margin: 0.5rem auto 0 0;
-}
-
-h2 {
-    font-size: 2rem;
-    margin: 0 auto 2rem 0;
-}
-
-h3 {
-    font-size: 1.2rem;
-    margin: 0.4rem auto 0 0;
-    font-variant: small-caps;
-}
-h4 {
-    font-size: 1.8rem;
-    margin: 4rem auto 0.2rem 0;
-}
-h5 {
-    font-size: 1.6rem;
-    margin: 4rem auto 0.2rem 0;
-}
-
-h6 {
-    font-size: 1.4rem;
-    margin: 2rem auto 0.2rem 0;
-}
-
-aside p, main p, footer p, main ul, .content-list, .actual-content, .soap-sub-qs, .soap-sub2-qs, .soap-list, .soap-sub-list, .list-content, .list-content li {
-    padding: 0.2rem;
-    line-height: 1.2;
-} 
-
-aside p {
-    margin: 0.4rem auto;
-    font-style: italic;
-}
 
 main p {
     margin: 0.2rem 4rem auto;
 }
-
-footer p {
-    margin: 0.2rem auto;
-} 
 
 main ul {
     margin: 0 auto;
@@ -128,43 +310,7 @@ main ul {
     border: 2px solid orange;
 }
 
-.content-list {
-    margin: 0.2rem auto 14rem 4rem;
-    border: none;
-}
 
-.actual-content, .list-content, .soap-sub-qs, .soap-sub2-qs, .soap-sub-list, .soap-list {
-    border: none;
-    width: 96%;
-}
-
-.soap-sub-qs {
-    margin: auto 6rem;
-}
-
-.soap-sub2-qs {
-    margin: auto 2rem;
-}
-
-.soap-list li {
-    border: none;
-    margin: 0 auto;
-    padding: 0.1rem 0.2rem;
-    list-style-type: none;
-    font-size: 1.1rem; 
-}
-
-.soap-sub-list {
-    border: none;
-    margin-bottom: 1.6rem;
-}
-
-.soap-sub-list li {
-    border: none;
-    list-style-type: circle;
-    margin: 0 auto;
-    padding: 0.1rem;
-}
 
 
 /*

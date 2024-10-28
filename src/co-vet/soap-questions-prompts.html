@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../styles.css" />
-    <title>KAH Staff Training/Reference Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>KAH Staff Training/Reference Guide | Home</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end Google fonts -->
+
+    <!-- my style sheet(s) -->
+    <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div>⬅️<a href="../../../../../index.html">🏠</a>(this works)</div>
-        <div>menu icon (soon) ➡️</div>
+        <div>
+          <a href="../../../../index.html"><img src="/src/home-icon2.png" alt="home icon" class="home-button" id="home-button"></a>
+        </div>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">&#9776</button>
+          
+          <div id="myDropdown" class="dropdown-content">
+            <a href="co-vet-ai-training.html">Co-Vet AI</a>
+            <a href="rec-videos.html">Recommended Videos</a>
+            <a href="">Prompts & SOAP questions</a>
+
+          </div>
+        </div> 
       </nav>
-      <h1>KAH Staff</h1>
-      <h2>Training/Reference Guide</h2>
+
+      <section id="hero">
+        <h1>KAH Staff</h1>
+        <h2>Training/Reference Guide</h2>
+      </section>
     </header>
+
+   
     <main>
       <h4>Co-Vet AI</h4>
       <h6>Prompts & SOAP Questions</h6>
@@ -1335,23 +1363,25 @@
           </li>
         </ul>
       </section>
-      <hr />
+      </main>
 
-      <hr />
-      <p>
-        Page/Site Issues/Questions? Make a pull request on our
-        <a
-          href="https://github.com/ARomano79/KAH-Staff-Reference-Guide"
-          target="_blank"
-          rel="noopener"
-        >
-          GitHub Repo</a
-        >
-        or <a href="mailto:amie.romano79@gmail.com">email me</a>😉
-      </p>
-    </main>
-    <footer>
-      <p>&#169; 2024 KAH Staff Training/Reference Guide</p>
-    </footer>
-  </body>
-</html>
+
+          <footer>
+        <section>
+          <p>
+            Page/Site Issues/Questions? Make a pull request on our
+            <a
+              href="https://github.com/ARomano79/KAH-Staff-Reference-Guide"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub Repo</a
+            >
+            or <a href="mailto:amie.romano79@gmail.com">email me</a><span>😉</span>
+          </p>
+        </section>
+        <p>&#169; &#169; <span id="#current-year"></span> KAH Staff Training/Reference Guide | site created by Amie Romano, LVT</p>
+      </footer>
+    </body>
+    <script src="/src/main.js"></script>
+  </html>
