@@ -70,21 +70,22 @@ nav div {
     border: 1px solid var(--KAH-lighter-blue);
     float: left; 
     background-color: var(--KAH-med-blue);
-    opacity: 90%;
+    opacity: 85%;
     border-radius: 0.4rem;
 }
 
      /* Dropdown Button */
      .dropbtn {
         background-color: var(--KAH-med-blue);
-        color: var(--KAH-lighter-blue);
+        color: var(--KAH-white);
+        opacity: 85%;
         margin: 0.2rem auto;
-        padding: 0.2rem 0.3rem 0.4rem;
-        font-size: 2.3rem;
+        padding: 0.4rem;
+        font-size: 2.4rem;
         font-weight: 800;
         text-align: center;
         line-height: 1.8rem;
-        border: 0.01rem solid var(--KAH-light-blue);
+        border: 0.01rem solid var(--KAH-white);
         border-radius: 0.4rem; 
         box-shadow: 0.04rem 0.04rem 0.06rem var(--dark-shadow);
         cursor: pointer;
