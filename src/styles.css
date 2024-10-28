@@ -90,12 +90,16 @@ nav div {
         cursor: pointer;
       }
     
+
+      /* 
       @media only screen and (min-width: 400px) {
         .dropbtn {
           font-size: 2.8rem;
           padding: 0.4rem 1rem 0.6rem;
         }
       }
+
+      */
     
       
       /* Dropdown button on hover & focus */
