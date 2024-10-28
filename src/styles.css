@@ -94,7 +94,7 @@ nav div {
 
       @media only screen and (max-width: 400px) {
         .dropbtn {
-            margin-top: 0.8rem;
+            margin-top: 0.6rem;
 
          padding: 0.4rem 0.2rem 1rem 0.2rem;
             line-height: 1rem;
