@@ -16,7 +16,7 @@
     --KAH-black: #000;
     --box-shadow: rgba(0,0,0,0.3);
     --light-shadow: rgba(134,211,227,0.4);
-    --dark-shadow: rgba(37,57,121,0.4);
+    --dark-shadow: rgba(37,57,121,0.3);
     
 }
 
@@ -51,14 +51,13 @@ header {
 
 nav {
     border-bottom: 1px solid black;
-    filter: drop-shadow(1px 1px 0.3px rgba(0,0,0,0.2));
+    filter: drop-shadow(1px 1px 0.3px var(--dark-shadow));
     background-color: var(--KAH-dark-blue);
     height: 3.6rem;
 }
 
 nav div {
     display: inline;
-
 }
 
 #home-button {
@@ -91,6 +90,8 @@ nav div {
         cursor: pointer;
       }
 
+
+      /* NEVER TOUCH THIS AGAIN - it makes the menu button not look completely fcuekd on iphone 14 */
       @media only screen and (max-width: 400px) {
         .dropbtn {
             margin-top: 0.4rem;
@@ -170,17 +171,29 @@ nav div {
     }
 
     section {
-        margin: 0 auto;
+        margin: 0.2rem auto 0.4rem;
+        padding: 0.2rem;
         border: none;
     }
     
+    /* index/main page only */ 
     aside {
         width: 90%;
-        margin: 0 auto;
+        margin: 0 auto 6rem;
         padding: 0.2rem 0.4rem;
-        border: 1px solid black;
+        border: 1px solid var(--KAH-dark-blue);
+        border-radius: 0.4rem;
+        box-shadow: 0.05rem 0.05rem 0.25rem var(--dark-shadow);
+    }
+
+    aside p {
+        margin: 0.4rem auto;
+        font-style: italic;
+        padding: 0.2rem;
+        line-height: 1.2;
     }
     
+
     h3 {
         font-size: 1.2rem;
         margin: 0.4rem auto 0 0;
@@ -202,23 +215,88 @@ nav div {
     
 /* OTHER TEXT FORMATTING */
 
-    aside p, main p, footer p, main ul, .actual-content, .soap-sub-qs, .soap-sub2-qs, .soap-list, .soap-sub-list, .list-content, .list-content {
+    main p, footer p, main ul, .actual-content, .soap-sub-qs, .soap-sub2-qs, .soap-list, .soap-sub-list, .list-content, .list-content {
         padding: 0.2rem;
+        margin: 0.2rem auto;
         line-height: 1.2;
+        width: 90%;
+        text-align: justify;
     } 
-    
-    aside p {
-        margin: 0.4rem auto;
-        font-style: italic;
-    }
 
+    /* used on main co-vet training page for "main" sub-section buttons */ 
     .content-list {
-        margin: 0.2rem 4rem;
+        margin: 0.2rem auto 1rem;
         padding: 0.2rem;
         border: none;
+        max-width: 60%;
     }
 
-    .content-list li, .actual-content li, .list-content li {
+    .content-list li {
+        line-height: 1.4;
+        margin: 1rem auto 2rem;
+        padding: 0.6rem;
+        list-style-type: none;
+        border: 1px solid var(--KAH-dark-blue);
+        border-radius: 0.4rem;
+        box-shadow: 0.05rem 0.05rem 0.25rem var(--dark-shadow);
+    }
+
+    .content-list a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: var(--KAH-med-blue); 
+        font-weight: 600; 
+    }
+
+
+    .video-list {
+        margin: 0.2rem auto;
+        border: none;
+        padding: 0.2rem;
+        line-height: 1.2;
+        width: 90%;
+    }
+
+    .video-list p {
+        border: none;
+        margin: 0 auto 0.2rem;
+        padding: 0.2rem;
+        text-align: justify;
+    }
+
+    .video-list a {
+        text-decoration: none;
+        color: var(--KAH-med-blue); 
+    }
+
+    .video-list ul {
+        border: none;
+        margin: 0.2rem;
+        padding: 0.2rem;
+    }
+
+    .video-list li {
+        border: none;
+        margin: 0.2rem 0.6rem;
+        padding: 0.2rem;
+        text-align: justify;
+        list-style-type: none;
+    }
+
+    .comment {
+        font-size: 0.9rem;
+        margin: 0 auto;
+        padding: 0.1rem;
+        line-height: 1.rem;
+        font-style: italic;
+        font-weight: 300;
+        
+    }
+
+
+
+
+ .actual-content li, .list-content li {
         line-height: 1.4;
         margin: 0.6rem auto;
         list-style-type: none;
@@ -269,12 +347,8 @@ footer {
     border: none;
 }
 
-footer section p, footer p {
-    padding: 0.2rem;
-}
-
 footer p {
-    margin: 0 auto;
+    margin: 0.2rem auto;
     font-style: italic;
     font-size: 0.8rem;
     border-top: 1px solid black;
