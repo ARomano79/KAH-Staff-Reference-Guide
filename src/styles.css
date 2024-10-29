@@ -215,7 +215,7 @@ nav div {
     
 /* OTHER TEXT FORMATTING */
 
-    main p, footer p, main ul, .actual-content, .soap-sub-qs, .soap-sub2-qs, .soap-list, .soap-sub-list, .list-content, .list-content {
+    main p, footer p, main ul, .actual-content, .soap-sub-qs, .soap-sub2-qs, .soap-sub-list, .list-content, .list-content {
         padding: 0.2rem;
         margin: 0.2rem auto;
         line-height: 1.2;
@@ -293,6 +293,20 @@ nav div {
         
     }
 
+    .soap-list li {
+        margin: 0.2rem auto 0.6rem;
+        list-style-type: none;
+        border: none;
+        padding: 0.2rem;
+        font-weight: 200;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+
+
+    
+
 
 
 
@@ -303,8 +317,11 @@ nav div {
     }
 
 
+
+
+
     
-    .actual-content, .list-content, .soap-sub-qs, .soap-sub2-qs, .soap-sub-list, .soap-list {
+    .actual-content, .list-content, .soap-sub-qs, .soap-sub2-qs, .soap-sub-list {
         border: none;
         width: 96%;
     }
@@ -318,11 +335,7 @@ nav div {
     }
     
     .soap-list li {
-        border: none;
-        margin: 0 auto;
-        padding: 0.1rem 0.2rem;
-        list-style-type: none;
-        font-size: 1.1rem; 
+        
     }
     
     .soap-sub-list {
