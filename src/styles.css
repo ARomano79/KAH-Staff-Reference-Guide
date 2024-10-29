@@ -181,7 +181,7 @@ nav div {
         width: 90%;
         margin: 0 auto 6rem;
         padding: 0.2rem 0.4rem;
-        border: 1px solid var(--KAH-dark-blue);
+        border: 1px solid transparent;
         border-radius: 0.4rem;
         box-shadow: 0.05rem 0.05rem 0.25rem var(--dark-shadow);
     }
@@ -191,6 +191,7 @@ nav div {
         font-style: italic;
         padding: 0.2rem;
         line-height: 1.2;
+        text-align: start;
     }
     
 
@@ -220,7 +221,7 @@ nav div {
         margin: 0.2rem auto;
         line-height: 1.2;
         width: 90%;
-        text-align: justify;
+        text-align: center;
     } 
 
     /* used on main co-vet training page for "main" sub-section buttons */ 
@@ -236,9 +237,10 @@ nav div {
         margin: 1rem auto 2rem;
         padding: 0.6rem;
         list-style-type: none;
-        border: 1px solid var(--KAH-dark-blue);
+        border: 1px solid transparent;
         border-radius: 0.4rem;
         box-shadow: 0.05rem 0.05rem 0.25rem var(--dark-shadow);
+        text-align: center;
     }
 
     .content-list a {
@@ -261,7 +263,7 @@ nav div {
         border: none;
         margin: 0 auto 0.2rem;
         padding: 0.2rem;
-        text-align: justify;
+        text-align: start;
     }
 
     .video-list a {
@@ -271,16 +273,17 @@ nav div {
 
     .video-list ul {
         border: none;
-        margin: 0.2rem;
-        padding: 0.2rem;
-    }
+        margin: 0.2rem 0.6rem;
+        text-align: start;
+        }
 
     .video-list li {
         border: none;
-        margin: 0.2rem 0.6rem;
+        margin: 0.2rem auto;
         padding: 0.2rem;
-        text-align: justify;
+        text-align: center;
         list-style-type: none;
+        
     }
 
     .comment {
@@ -296,27 +299,19 @@ nav div {
     .soap-list li {
         margin: 0.2rem auto 0.6rem;
         list-style-type: none;
-        border: none;
+        border: 1px solid transparent;
+        border-radius: 0.4rem;
+        box-shadow: 0.05rem 0.05rem 0.25rem var(--dark-shadow);
         padding: 0.2rem;
         font-weight: 200;
         text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .soap-list a {
         font-size: 1rem;
+        font-weight: 600;
     }
-
-
-
-    
-
-
-
-
- .actual-content li, .list-content li {
-        line-height: 1.4;
-        margin: 0.6rem auto;
-        list-style-type: none;
-    }
-
-
 
 
 
@@ -326,13 +321,12 @@ nav div {
         width: 96%;
     }
     
-    .soap-sub-qs {
-        margin: auto 6rem;
+    .soap-sub-qs, .soap-sub-qs, .soap-sub2-qs {
+        margin: auto 4rem;
+        text-align: justify;
+        list-style-type: none;
     }
     
-    .soap-sub2-qs {
-        margin: auto 2rem;
-    }
     
     .soap-list li {
         
@@ -345,7 +339,7 @@ nav div {
     
     .soap-sub-list li {
         border: none;
-        list-style-type: circle;
+        list-style-type: none;
         margin: 0 auto;
         padding: 0.1rem;
     }
