@@ -220,21 +220,33 @@ nav div {
 
   /* used on main co-vet training page for "main" sub-section buttons */ 
   .content-list {
-    margin: 0.2rem auto 1rem;
-    padding: 0.2rem;
-    border: none;
-    max-width: 60%;
+
+    display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: stretch; 
+        align-content: stretch;
+        margin: 0.2rem auto 0.4rem;
+        padding: 0.2rem;
+        border: none;
 }
 
 .content-list li {
     line-height: 1.4;
-    margin: 1rem auto 2rem;
-    padding: 0.6rem;
     list-style-type: none;
     border: 1px solid transparent;
     border-radius: 0.4rem;
     box-shadow: 0.05rem 0.05rem 0.25rem var(--dark-shadow);
     text-align: center;
+    width: 20rem;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch; 
+    align-content: stretch;
+    margin: 0.6rem 0.8rem auto;
+    padding: 0.2rem;
 }
 
 .content-list a {
