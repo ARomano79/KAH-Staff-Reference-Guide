@@ -218,6 +218,81 @@ nav div {
     
 /* OTHER TEXT FORMATTING */
 
+  /* used on main co-vet training page for "main" sub-section buttons */ 
+  .content-list {
+    margin: 0.2rem auto 1rem;
+    padding: 0.2rem;
+    border: none;
+    max-width: 60%;
+}
+
+.content-list li {
+    line-height: 1.4;
+    margin: 1rem auto 2rem;
+    padding: 0.6rem;
+    list-style-type: none;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+    box-shadow: 0.05rem 0.05rem 0.25rem var(--dark-shadow);
+    text-align: center;
+}
+
+.content-list a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--KAH-med-blue); 
+    font-weight: 600; 
+}
+
+
+.video-list {
+    margin: 0.2rem auto;
+    border: none;
+    padding: 0.2rem;
+    line-height: 1.2;
+    width: 90%;
+}
+
+.video-list p {
+    border: none;
+    margin: 0 auto 0.2rem;
+    padding: 0.2rem;
+    text-align: start;
+}
+
+.video-list a {
+    text-decoration: none;
+    color: var(--KAH-med-blue); 
+}
+
+.video-list ul {
+    border: none;
+    margin: 0.2rem 0.6rem;
+    text-align: start;
+    }
+
+.video-list li {
+    border: none;
+    margin: 0.2rem auto;
+    padding: 0.2rem;
+    text-align: center;
+    list-style-type: none;
+    
+}
+
+.comment {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-weight: 300;
+    text-align: left;
+    
+}
+
+
+
+/*
     main p, footer p, main ul, .actual-content, .soap-sub-qs, .soap-sub2-qs, .soap-sub-list, .list-content, .list-content {
         padding: 0.2rem;
         margin: 0.2rem auto;
@@ -226,89 +301,68 @@ nav div {
         text-align: center;
     } 
 
-    /* used on main co-vet training page for "main" sub-section buttons */ 
-    .content-list {
-        margin: 0.2rem auto 1rem;
-        padding: 0.2rem;
+    */
+
+  
+
+
+    /* section for SOAP list - make it flex!! */ 
+    #list-of-soap-types {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+        flex: 2, 1, auto;
         border: none;
-        max-width: 60%;
+        margin: 0.2rem auto;
+        padding: 0.2rem;
     }
 
-    .content-list li {
+    #list-of-soap-types ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: stretch; 
+        align-content: stretch;
+        margin: 0.2rem auto 0.4rem;
+        padding: 0.2rem;
+        border: none;
+    }
+
+    #list-of-soap-types li {
+        width: 16rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: stretch; 
+        align-content: stretch;
+        margin: 0.6rem 0.3rem auto;
+        padding: 0.2rem;
         line-height: 1.4;
-        margin: 1rem auto 2rem;
-        padding: 0.6rem;
         list-style-type: none;
         border: 1px solid transparent;
         border-radius: 0.4rem;
         box-shadow: 0.05rem 0.05rem 0.25rem var(--dark-shadow);
         text-align: center;
-    }
-
-    .content-list a {
         font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    #list-of-soap-types a {
+        font-size: 1.1rem;
         text-decoration: none;
         color: var(--KAH-med-blue); 
-        font-weight: 600; 
-    }
-
-
-    .video-list {
-        margin: 0.2rem auto;
-        border: none;
-        padding: 0.2rem;
-        line-height: 1.2;
-        width: 90%;
-    }
-
-    .video-list p {
-        border: none;
-        margin: 0 auto 0.2rem;
-        padding: 0.2rem;
-        text-align: start;
-    }
-
-    .video-list a {
-        text-decoration: none;
-        color: var(--KAH-med-blue); 
-    }
-
-    .video-list ul {
-        border: none;
-        margin: 0.2rem 0.6rem;
-        text-align: start;
-        }
-
-    .video-list li {
-        border: none;
-        margin: 0.2rem auto;
-        padding: 0.2rem;
+        font-weight: 500; 
         text-align: center;
-        list-style-type: none;
-        
     }
 
-    .comment {
-        font-size: 0.9rem;
-        margin: 0 auto;
-        padding: 0.1rem;
-        line-height: 1.rem;
-        font-style: italic;
-        font-weight: 300;
-        
-    }
-
-
-    /* section for SOAP list - make it flex!! */ 
-    #list-of-soap-types {
-
-    }
 
 
     /* SOAP pages text styles */
     .soap-general-text {
         border: none;
-        margin: 0.2rem auto 0.4rem;
+        margin: 0.2rem 0.6rem auto 1rem;
         padding: 0.2rem;
         text-align: start;
     }
@@ -336,25 +390,40 @@ nav div {
         font-weight: 300;
     }
 
+    .soap-list {
+        border: none;
+        margin: 0.3rem auto;
+        padding: 0.3rem;
+        text-align: center;
+        width: 98%;
+    }
+
+/* 
+
+
     .soap-list li {
-        margin: 0.2rem auto 0.6rem;
+        margin: 0.2rem auto;
         list-style-type: none;
         border: 1px solid transparent;
-        border-radius: 0.4rem;
-        box-shadow: 0.05rem 0.05rem 0.25rem var(--dark-shadow);
-        padding: 0.2rem;
         font-weight: 200;
         text-align: center;
         font-size: 1.2rem;
+        
     }
 
     .soap-list a {
         font-size: 1rem;
         font-weight: 600;
+        margin: 0.2rem auto;
+        padding: 0.2rem;
     }
 
-    
+    */
 
+
+
+
+    /*
     
     .actual-content, .list-content, .soap-sub-qs, .soap-sub2-qs, .soap-sub-list {
         border: none;
@@ -380,7 +449,7 @@ nav div {
         padding: 0.1rem;
     }
 
-
+*/
 
 main {
     border: none;
