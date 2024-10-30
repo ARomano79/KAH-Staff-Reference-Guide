@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>KAH Staff Training/Reference Guide | Home</title>
+    <title>KAH Staff Training/Reference Guide | Co-Vet AI | Prompts & SOAP Questions</title>
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,7 +46,7 @@
     <main>
       <h4>Co-Vet AI</h4>
       <h6>Prompts & SOAP Questions</h6>
-      <p>
+      <p class="soap-general-text">
         Open this section during exams/recording in CoVet. AI is prompt
         oriented, and these questions (or similar) can help us assess as many
         details as possible about the Pt. This section will be updated as we
@@ -55,80 +55,88 @@
       </p>
       <section>
         <h6>Exam Intro/Prompt</h6>
-        <p>
+        <p class="soap-general-text">
           Start each appointment by greeting the Client and patient, and verify
           nature of visit. Explain to O that we are now integrating AI into our
           workflow, and we are using an audio-based, scribe-type software to
-          assist creating our medical records, and verify consent. Once ok,
-          START RECORDING, and say... (example)...
+          assist creating our medical records, and verify consent. Once ok, <span class="soap-bold">START RECORDING</span>, and say... (example below)... If you're wondering how you got here and don't know what to do, visit the "<a href="rec-videos.html">Recommended Videos</a>" page to get started.
         </p>
-        <p>
-          "TODAY WE HAVE [patient name], HERE FOR [appointment type (recheck
-          ears, annual, etc)]. [patient name] IS A [age], [f/m, s/n], [species],
-          and CURRENT WEIGHT TODAY IS ___."
+        <p class="soap-general-text soap-prompts">
+          "<span class="soap-bold">TODAY WE HAVE</span> [<span class="soap-italic">patient name</span>], 
+            <span class="soap-bold">HERE FOR</span> [<span class="soap-italic">appointment type (recheck
+          ears, annual, etc)</span>].  
+          [<span class="soap-italic">patient name</span>] <span class="soap-bold">IS A</span> [<span class="soap-italic">age</span>], 
+          [<span class="soap-italic">f/m, s/n</span>], [<span class="soap-italic">species</span>],
+          and <span class="soap-bold">CURRENT WEIGHT TODAY IS ___</span>."
         </p>
-        <p>
-          Start SOAP questions from here, making sure to specifically state "NO
-          VOMITING, NO DIARRHEA, etc (keywords/prompts matter!)"...
+        <p class="soap-general-text">
+          Start SOAP questions from here, making sure to specifically state "<span class="soap-bold">NO
+          VOMITING</span>", "<span class="soap-bold">NO  DIARRHEA</span>", etc (keywords/prompts matter!)...
         </p>
       </section>
 
       <h6>SOAP LIST</h6>
-      <ul class="content-list">
-        <!-- USE FOR PAGE LIST/NAV/LINKING -->
-        <li>
-          General/Standard
-          <ul class="soap-list">
-            <li><a href="#soap-qs-medical">Medical</a></li>
-            <li><a href="#soap-qs-med-prog">Med Progress</a></li>
-            <li><a href="#soap-qs-tech">Tech</a></li>
-            <li><a href="#soap-qs-obj">Objective Prompts</a> <span class="comment">(Drs.)</span></li>
-          </ul>
-        </li>
-        <li>
-          Annual Wellness
-          <ul class="soap-list">
-            <li><a href="#soap-qs-awk9">Junior K9</a></li>
-            <li><a href="#soap-qs-awfel">Junior Feline</a></li>
-            <li><a href="#soap-qs-awsk9">Senior K9</a></li>
-            <li><a href="#soap-qs-awsfel">Senior Feline</a></li>
-          </ul>
-        </li>
-        <li>
-          Establish Care
-          <ul class="soap-list">
-            <li><a href="#soap-qs-est-care-ak9">Adult K9</a></li>
-            <li><a href="#soap-qs-est-care-puppy">Puppy</a> <span class="comment">(new Client/new Pt)</span></li>
-            <li><a href="#soap-qs-est-care-afel">Adult Feline</a></li>
-            <li><a href="#soap-qs-est-care-kitten">Kitten</a> <span class="comment">(new Client/new Pt)</span></li>
-          </ul>
-        </li>
-        <li>
-          Life Stages
-          <ul class="soap-list">
-            <li><a href="#soap-qs-puppy">Puppy</a></li>
-            <li><a href="#soap-qs-kitten">Kitten</a></li>
-            <li><a href="#soap-qs-paps">PAP - spay</a></li>
-            <li><a href="#soap-qs-papn">PAP - neuter</a></li>
-            <li><a href="#soap-qs-papd">PAP - dental</a></li>
-            <li><a href="#soap-qs-papm">PAP - mass removal</a></li>
-            <li><a href="#soap-qs-qol">QOL</a></li>
-          </ul>
-        </li>
-        <li>
-          Specific Conditions
-          <ul class="soap-list">
-            <li><a href="#soap-qs-eyes">Eyes</a></li>
-            <li><a href="#soap-qs-ears">Ears</a></li>
-            <li><a href="#soap-qs-derm">Derm/Skin</a> <span class="comment">(Itching)</span></li>
-            <li><a href="#soap-qs-vomiting">Vomiting</a></li>
-            <li><a href="#soap-qs-diarrhea">Diarrhea</a></li>
-            <li><a href="#soap-qs-urinary">Urinary</a></li>
-            <li><a href="#soap-qs-coughing">Coughing</a></li>
-            <li><a href="#soap-qs-limping">Limping</a></li>
-          </ul>
-        </li>
-      </ul>
+      <section id="list-of-soap-types">
+        <ul class="content-list">
+          <!-- USE FOR PAGE LIST/NAV/LINKING -->
+          <li>
+            General/Standard
+            <ul class="soap-list">
+              <li><a href="#soap-qs-medical">Medical</a></li>
+              <li><a href="#soap-qs-med-prog">Med Progress</a></li>
+              <li><a href="#soap-qs-tech">Tech</a></li>
+              <li><a href="#soap-qs-obj">Objective Prompts</a> <span class="comment">(Drs.)</span></li>
+            </ul>
+          </li>
+          <li>
+            Annual Wellness
+            <ul class="soap-list">
+              <li><a href="#soap-qs-awk9">Junior K9</a></li>
+              <li><a href="#soap-qs-awfel">Junior Feline</a></li>
+              <li><a href="#soap-qs-awsk9">Senior K9</a></li>
+              <li><a href="#soap-qs-awsfel">Senior Feline</a></li>
+            </ul>
+          </li>
+          <li>
+            Establish Care
+            <ul class="soap-list">
+              <li><a href="#soap-qs-est-care-ak9">Adult K9</a></li>
+              <li><a href="#soap-qs-est-care-puppy">Puppy</a> <span class="comment">(new Client/new Pt)</span></li>
+              <li><a href="#soap-qs-est-care-afel">Adult Feline</a></li>
+              <li><a href="#soap-qs-est-care-kitten">Kitten</a> <span class="comment">(new Client/new Pt)</span></li>
+            </ul>
+          </li>
+          <li>
+            Life Stages
+            <ul class="soap-list">
+              <li><a href="#soap-qs-puppy">Puppy</a></li>
+              <li><a href="#soap-qs-kitten">Kitten</a></li>
+              <li><a href="#soap-qs-paps">PAP - spay</a></li>
+              <li><a href="#soap-qs-papn">PAP - neuter</a></li>
+              <li><a href="#soap-qs-papd">PAP - dental</a></li>
+              <li><a href="#soap-qs-papm">PAP - mass removal</a></li>
+              <li><a href="#soap-qs-qol">QOL</a></li>
+            </ul>
+          </li>
+          <li>
+            Specific Conditions
+            <ul class="soap-list">
+              <li><a href="#soap-qs-eyes">Eyes</a></li>
+              <li><a href="#soap-qs-ears">Ears</a></li>
+              <li><a href="#soap-qs-derm">Derm/Skin</a> <span class="comment">(Itching)</span></li>
+              <li><a href="#soap-qs-vomiting">Vomiting</a></li>
+              <li><a href="#soap-qs-diarrhea">Diarrhea</a></li>
+              <li><a href="#soap-qs-urinary">Urinary</a></li>
+              <li><a href="#soap-qs-coughing">Coughing</a></li>
+              <li><a href="#soap-qs-limping">Limping</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+
+
+      
 
       <h5>General</h5>
       <section>

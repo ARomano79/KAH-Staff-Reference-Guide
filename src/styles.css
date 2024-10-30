@@ -203,6 +203,7 @@ nav div {
     h4 {
         font-size: 1.8rem;
         margin: 4rem auto 0.2rem 0;
+        color: var(--KAH-dark-blue);
     }
     h5 {
         font-size: 1.6rem;
@@ -212,6 +213,7 @@ nav div {
     h6 {
         font-size: 1.4rem;
         margin: 2rem auto 0.2rem 0;
+        color: var(--KAH-dark-blue);
     }
     
 /* OTHER TEXT FORMATTING */
@@ -296,6 +298,44 @@ nav div {
         
     }
 
+
+    /* section for SOAP list - make it flex!! */ 
+    #list-of-soap-types {
+
+    }
+
+
+    /* SOAP pages text styles */
+    .soap-general-text {
+        border: none;
+        margin: 0.2rem auto 0.4rem;
+        padding: 0.2rem;
+        text-align: start;
+    }
+
+    .soap-general-text a {
+        text-decoration: none;
+        color: var(--KAH-med-blue); 
+    }
+
+    .soap-prompts {
+        margin: 0.2rem auto;
+        padding: 0.2rem;
+        border: none;
+        width: 88%;
+        line-height: 1.4;
+    }
+
+    .soap-bold {
+        color: var(--KAH-dark-blue);
+        font-weight: 600;
+    }
+
+    .soap-italic {
+        font-style: italic;
+        font-weight: 300;
+    }
+
     .soap-list li {
         margin: 0.2rem auto 0.6rem;
         list-style-type: none;
@@ -313,7 +353,7 @@ nav div {
         font-weight: 600;
     }
 
-
+    
 
     
     .actual-content, .list-content, .soap-sub-qs, .soap-sub2-qs, .soap-sub-list {
@@ -327,10 +367,6 @@ nav div {
         list-style-type: none;
     }
     
-    
-    .soap-list li {
-        
-    }
     
     .soap-sub-list {
         border: none;
